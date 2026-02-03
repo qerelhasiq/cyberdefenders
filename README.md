@@ -38,7 +38,7 @@ Through these challenges, I aim to strengthen my:
 - Familiarity with blue team tools (Wireshark, Volatility, SIEM concepts, etc.)
 - Ability to communicate findings clearly in a professional security context
 
-##Disclaimer
+## Disclaimer
 These write-ups are for educational purposes only. All analyses were conducted in legal, authorized CyberDefenders environments. No systems were harmed or accessed without permission
 
 ## About Me
