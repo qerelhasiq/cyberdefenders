@@ -5,12 +5,13 @@ These write-ups are intended for learning and portfolio purposes, and all challe
 
 ## Repository Structure
 cyberdefenders-writeups/<br>
-├── network-forensics/<br>
-├── endpoint-forensics/<br>
-├── log-analysis/<br>
 ├── malware-analysis/<br>
-├── incident-response/<br>
-└── threat-hunting/
+├── threat-intel/<br>
+├── network-forensics/<br>
+├── detection-engineering/<br>
+├── threat-hunting/<br>
+├── cloud-forensics/<br>
+└── endpoint-forensics/
 
 Each folder contains individual Markdown files structured as follows:
 - Challenge Name
