@@ -1,4 +1,4 @@
-#cyberdefenders-writeups
+# cyberdefenders-writeups
 Personal write-ups for CyberDefenders challenges, documenting my learning process in blue team operations, digital forensics, and incident response.
 The goal of this repository is to showcase my investigation methodology, tools used, and key findings while solving realistic defensive security scenarios.
 These write-ups are intended for learning and portfolio purposes, and all challenges were completed ethically within authorized CyberDefenders environments.
