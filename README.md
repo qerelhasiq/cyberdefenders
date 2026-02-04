@@ -23,8 +23,7 @@ Each folder contains individual Markdown files structured as follows:
 - Tools Used
 - Investigation & Analysis Steps
 - Findings / Indicators of Compromise (IOCs)
-- Lessons Learned
-This structure mirrors real-world SOC and DFIR reporting practices.
+
 
 ## Why CyberDefenders?
 CyberDefenders focuses on realistic defensive security scenarios, including:
