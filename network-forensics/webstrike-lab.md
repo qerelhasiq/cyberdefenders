@@ -76,3 +76,4 @@ The objective of this investigation is to analyze the PCAP to determine how the 
 | C2 Port           | 8080                                                                   |
 | Exfiltrated File  | /etc/passwd                                                            |
 | User-Agent        | Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0 |
+
