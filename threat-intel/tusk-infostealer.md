@@ -1,7 +1,7 @@
 ## Challenge Information
 - **Name:** Tusk Infostealer Lab
 - **Author:** 0x4104, CyberDefenders
-- **Category:** Network Forensics
+- **Category:** Threat Intel
 - **Difficulty:** Easy
 
 ---
