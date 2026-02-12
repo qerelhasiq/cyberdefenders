@@ -54,7 +54,7 @@ The goal is to gather and analyze data beneficial to other SOC members, includin
 
 ### First Submission Timestamp (UTC)
 - In the **Details** tab, locate the **History** subsection
-- _First Submission_ timestamp: <UTC-timestamp-from-VirusTotal>
+- _First Submission_ timestamp: `2023-10-06 04:41:50`
 
 ### MITRE ATT&CK Technique (Data Collection Before Exfiltration)
 - Navigate to the **Behavior** tab
