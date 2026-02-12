@@ -67,10 +67,10 @@ The goal is to gather and analyze data beneficial to other SOC members, includin
 ### Social Media-Related DNS Resolutions
 - Go to Behavior → Activity Summary → DNS Resolutions
 - Resolved domains observed:
-  `business.bing.com → Microsoft/Bing<br>
-  edge-mobile-static.azureedge.net → Azure CDN<br>
-  edgeassetservice.azureedge.net → Azure CDN<br>
-  facebook.com & connect.facebook.net → social media`
+    - business.bing.com → Microsoft/Bing
+    - edge-mobile-static.azureedge.net → Azure CDN
+    - edgeassetservice.azureedge.net → Azure CDN
+    - facebook.com & connect.facebook.net → social media
 - Identify the social media domain: **facebook.com**
 
 ### Malicious IP Address and Destination Port
