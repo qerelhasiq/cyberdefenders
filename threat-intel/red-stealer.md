@@ -95,6 +95,7 @@ The goal is to gather and analyze data beneficial to other SOC members, includin
 ### DLL Used for Privilege Escalation
 - Go to **VirusTotal**, then **Details** and then **Imports**
 - Imported DLLs observed:
+
 | DLL              | What It Usually Handles              |
 | ---------------- | ------------------------------------ |
 | kernel32.dll     | Processes, memory, file I/O          |
